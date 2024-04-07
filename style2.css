@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+height: 100vh;
+width: 100%;
+background-color:aqua ;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+header{
+    background-color: azure;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ }
+
+.barra-nav{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.408);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo{
+    display: flex;
+    gap: 10px;
+}
+h1{
+    color: aliceblue;
+}
+.contenedor-redes-menu{
+    display: flex;
+    gap: 30px;
+}
+.lista-redes{
+    display: flex;
+    list-style: none;
+    gap:  15px;
+}
+.buscador-menu{
+    display: flex;
+    list-style: none;
+    gap:  15px;
+
+}
+.banner{
+    background-image: url(https://images.pexels.com/photos/2962491/pexels-photo-2962491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 2200px;
+    background-position: 20%;
+    background-size: cover;
+
+}
+
+#contenido-centrado{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+   }
+
+.body-collage-cards{
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.collage-fotos{
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+}
+.contenedor-colum{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    gap: 10px;
+}
+
+#img-collage-colum1{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow:hidden;
+}
+#img-collage-colum2{
+    position: relative;
+    width: 200px;
+    height: 150px;
+
+}
+.contenedor-colum2{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 10px;
+
+}
+.imagenes-row{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+#imagen-extensa-colum2{
+    position: relative;
+    width: 95%;
+    height: 90%;
+    padding: 5px;
+    overflow-anchor: hidden;
+
+}
+.subtitulo-img{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.625);
+    font-size: 10px;
+    bottom: 0;
+    color: rgba(240, 248, 255, 0.848);
+    height: 15%;
+    width: 100%;
+}
