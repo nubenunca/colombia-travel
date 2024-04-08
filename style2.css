@@ -7,6 +7,9 @@ body {
 height: 100vh;
 width: 100%;
 background-color:white ;
+font-family: "Open Sans", sans-serif;
+font-optical-sizing: auto;
+font-size: 12px;
 /* display: flex; */
 /* align-items: center; */
 /* justify-content: center; */
@@ -23,7 +26,7 @@ header{
 
 .barra-nav{
     position: absolute;
-    background-color: rgba(128, 128, 128, 0.408);
+    background-color: rgba(7, 7, 7, 0.408);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -41,8 +44,10 @@ a {
     gap: 10px;
 }
 h1{
-    color: aliceblue;
-}
+    color: rgb(252, 252, 252);
+    font-family: "Chewy";
+    font-weight: 400;
+    }
 .contenedor-redes-menu{
     display: flex;
     gap: 30px;
@@ -59,14 +64,10 @@ h1{
 
 }
 .banner{
-    background-image: url(https://images.pexels.com/photos/2962491/pexels-photo-2962491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-image: url(/img/banner_colombiatravel.svg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    background-position: 20%;
-    background-size: cover;
-
-
+    background-size:cover;
+    height:  286px;
 }
 
 #contenido-centrado{
@@ -74,16 +75,20 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 .contenido{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 
 .body-collage-cards{
+    margin-top: 30px;
+    margin-bottom: 70px;
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center; 
     flex-direction: column; 
 }
@@ -92,50 +97,44 @@ h1{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(7,1fr);
     gap: 1em;
-    width: 1000px;
+    /* width:1000px; */
     height: 400px;
     overflow: hidden;
 }
 
 
-.collage-fotos > div{
-    overflow: hidden;
-    border: 1px solid red;
-
-}
-
 
 #img-collage-colum1{
     grid-row: 1/5;
     grid-column: 1;
-    border: 1px solid red;
+
 }
 
 
 #img-collage-colum2{
     grid-row: 1/4;
     grid-column: 2;
-    border: 1px solid red;
+
 }
 
 
 #img-collage-colum3{
     grid-row: 1/4;
     grid-column: 3;
-    border: 1px solid red;
+
 }
 
 
 #img-collage-colum4{
     grid-row: 5 / 8;
     grid-column: 1;
-    border: 1px solid red;
+
 }
 
 #img-collage-colum5{
     grid-row: 4 / 8;
     grid-column: 2 / 4;
-    border: 1px solid red;
+
 }
 
 .recomendados-publicidad{
@@ -150,7 +149,6 @@ h1{
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(1,1fr);
     gap:5px;
-    border-color:#79FF39;
 }
 
 
@@ -162,13 +160,13 @@ h1{
 
 .lugares-recomendados{
     grid-row: 1;
-    grid-column: 1/7;
+    grid-column: 2/6;
     
 }
 .card-lugar{
     display:flex;
     flex-direction: row;
-    border-top: 2px solid #79FF39;
+    border-bottom: 2px solid #79FF39;
     padding-top:20px ;
     margin-left: 10px;
     gap: 20px;
@@ -187,32 +185,36 @@ h1{
 
 footer{
     display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: grey;
+    justify-content: end;
+    background-color:black;
+   
 }
 .contactar-footer{
+    color: aliceblue;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    gap: 10px;
+    padding: 100px 100px 100px 100px;
 }
-/* #img-collage-column1{
-    grid-row: ;
-    grid-column: ;
+
+.collage-fotos figure{
+   overflow: hidden;
 }
-#img-collage-column1{
-    grid-row: ;
-    grid-column: ;
+input{
+    border: 1px solid white;
 }
-#img-collage-column1{
-    grid-row: ;
-    grid-column: ;
-}
-#img-collage-column1{
-    grid-row: ;
-    grid-column: ;
-} */
+@media only screen and (max-width: 993px) {
+    /* Reglas CSS que se aplicarán cuando el ancho de la pantalla sea mayor o igual a 768px */
+   body{
+    background: pink;
+   }
+   .banner{
+    display: none;
+   }
+   .publicidad{
+    display: none;
+   }
+   .lugares-recomendados{
+    grid-column:  1 / 10;
+   }
+  }
